@@ -10,17 +10,17 @@ class UserSetting extends StatefulWidget {
 }
 
 class _UserSettingState extends State<UserSetting> {
-  // Initial Selected Value
-  String dropdownvalue = '10';
+  // // Initial Selected Value
+  // String dropdownvalue = '10';
 
-  // List of items in our dropdown menu
-  var items = [
-    '10',
-    '100',
-    '300',
-    '500',
-    '1000',
-  ];
+  // // List of items in our dropdown menu
+  // var items = [
+  //   '10',
+  //   '100',
+  //   '300',
+  //   '500',
+  //   '1000',
+  // ];
 
   @override
   Widget build(BuildContext context) {
@@ -53,28 +53,28 @@ class _UserSettingState extends State<UserSetting> {
                     style: TextStyle(fontSize: 18),
                   ),
                 ),
-                DropdownButton(
-                  // Initial Value
-                  value: dropdownvalue,
+                // DropdownButton(
+                //   // Initial Value
+                //   value: dropdownvalue,
 
-                  // Down Arrow Icon
-                  icon: const Icon(Icons.keyboard_arrow_down),
+                //   // Down Arrow Icon
+                //   icon: const Icon(Icons.keyboard_arrow_down),
 
-                  // Array list of items
-                  items: items.map((String items) {
-                    return DropdownMenuItem(
-                      value: items,
-                      child: Text(items),
-                    );
-                  }).toList(),
-                  // After selecting the desired option,it will
-                  // change button value to selected value
-                  onChanged: (String? newValue) {
-                    setState(() {
-                      dropdownvalue = newValue!;
-                    });
-                  },
-                ),
+                //   // Array list of items
+                //   items: items.map((String items) {
+                //     return DropdownMenuItem(
+                //       value: items,
+                //       child: Text(items),
+                //     );
+                //   }).toList(),
+                //   // After selecting the desired option,it will
+                //   // change button value to selected value
+                //   onChanged: (String? newValue) {
+                //     setState(() {
+                //       dropdownvalue = newValue!;
+                //     });
+                //   },
+                // ),
               ],
             ),
           ],
